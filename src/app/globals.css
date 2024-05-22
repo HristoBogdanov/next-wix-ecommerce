@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hover-effect {
+  @apply hover:text-scarlet-gum-500 transition-all ease-in-out duration-300;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 100;
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease-in-out forwards;
+  opacity: 100;
+}
+
+.slide-out {
+  animation: slideOut 0.5s ease-in-out forwards;
+  opacity: 0;
+}
