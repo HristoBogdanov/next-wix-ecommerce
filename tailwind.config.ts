@@ -27,6 +27,7 @@ const config: Config = {
           "900": "#5b2d76",
           "950": "#43185d",
         },
+        "alert-red": "#F35C7A",
       },
     },
   },
